@@ -64,10 +64,6 @@ import Nav from "./nav.svelte";
     <p>Nomor WhatsApp   :   0818295921</p>
 </div>
 
-
-
-
-    
 <div class = "box">
   <div id="layanan">
   <center>
@@ -87,13 +83,14 @@ import Nav from "./nav.svelte";
       </div>
     </div>
 {/each}
+<center>
+  <p>Jika anda mempunyai request lainnya dapat menghubungi kami</p>
+  <br>
+  <button class="bg-black text-white px-3 py-2 rounded">Request Pesanan</button>
+</center>
 </div>
 
-<center>
-    <p>Jika anda mempunyai request lainnya dapat menghubungi kami</p>
-    <br>
-    <button class="bg-black text-white px-3 py-2 rounded">Request Pesanan</button>
-</center>
+
 
 
 <Footer/>
@@ -113,8 +110,10 @@ import Nav from "./nav.svelte";
     }
     .box {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       width: 90%;
+      padding-top: 40px;
+      padding-bottom: 40px;
       margin: 20px auto;
       border: 1px solid #ddd;
       border-radius: 5px;

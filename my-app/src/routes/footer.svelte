@@ -7,14 +7,12 @@
         <div class="footerNav">
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">About</a></li>
                 <li><a href="">Contact Us</a></li>
-                <li><a href="">Our Team</a></li>
+                <li><a href="">Catalogue</a></li>
             </ul>
         </div>
         <div class="footerBottom">
-            <p>Copyright &copy;2024; Designed by <span class="designer">Krotify</span></p>
+            <p>Copyright &copy;2024 Istana Keramik; Created by <span class="designer">Krotify</span></p>
         </div>
     </div>
 </footer>
@@ -37,26 +35,16 @@ footer{
 }
 .socialicons a{
     text-decoration: none;
-    padding: 10px;
-    background-color: white;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     margin: 10px;
-    border-radius: 100%;
+    border-radius: 10%;
 }
 
-.socialicons a i{
-    font-size: 2em;
-    color: black;
-    opacity: 0.9;
-}
-
-/* Hover Effects on Social Media Icons */
-.socialicons a:hover{
-    background-color: #111;
-    transition: 0.5s;
-}
 
 .socialicons a:hover i{
-    color: white;
+    color: rgb(190, 190, 190);
     transition: 0.5s;
 }
 .footerNav{
