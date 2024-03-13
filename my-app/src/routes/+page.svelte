@@ -1,4 +1,5 @@
 <script>
+	import Gallery from './gallery.svelte';
     import Footer from "./footer.svelte";
 import Nav from "./nav.svelte";
     const jasa = [
@@ -92,7 +93,7 @@ import Nav from "./nav.svelte";
 
 
 
-
+<Gallery />
 <Footer/>
 <style>
     .hero {
