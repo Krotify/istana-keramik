@@ -12,18 +12,17 @@
 }
 
 .flex-item-left {
-  background-color: #f1f1f1;
-  padding: 10px;
+
+
   flex: 50%;
 }
 
 .flex-item-right {
-  background-color: dodgerblue;
-  padding: 10px;
+
+
   flex: 50%;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-item-right, .flex-item-left {
     flex: 100%;
@@ -33,8 +32,7 @@
 
 
 
-
-
+<center style="margin-top: 60px;"><h1 class="text-4xl font-semibold mb-10">Gallery</h1></center>
 <div class="flex-container">
   <div class="flex-item-left"><img src="pexels-eberhard-grossgasteiger-844297.jpg"></div>
   <div class="flex-item-right"><img src="aurora.avif"></div>

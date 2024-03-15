@@ -14,7 +14,8 @@ import { onMount } from 'svelte';
 <Nav />
 <div class="content">
 <center>
-    <h1 class="text-2xl">Produk kami</h1>
+    <h1 class="text-4xl font-semibold mb-10">Produk kami</h1>
+    <p>Untuk produk berupa barang bisa kontak ke nomor WhatsApp kami untuk menanyakan stok</p>
     
 </center>
 {#each posts as post}
