@@ -2,43 +2,16 @@
 	import Gallery from './gallery.svelte';
     import Footer from "./footer.svelte";
 import Nav from "./nav.svelte";
-    const jasa = [
-        {
-            'nama':'CNC Metal Cutting',
-            'desc':'',
-            'img':'',
-        },
-        {
-            'nama':'Krawangan',
-            'desc':'',
-            'img':'',
-        },
-        {
-            'nama':'Cutting PVC, Acrylic, CP, GRC, Gravir / Engrave Granit',
-            'desc':'',
-            'img':'',
-        },
-        {
-            'nama':'Pemasangan filter air',
-            'desc':'',
-            'img':'',
-        },
-        {
-            'nama':'Stepnosing',
-            'desc':'',
-            'img':'',
-        },
-        {
-            'nama':'Pemotongan Granit atau Keramik',
-            'desc':'',
-            'img':'',
-        },
-        {
-            'nama':'Bak Cuci Piring (Bisa Custom)',
-            'desc':'',
-            'img':'',
-        },
-    ];
+
+import { onMount } from 'svelte';
+	export let posts = [];
+  
+	onMount(()=>{fetch('catalogue.json')
+    	.then(response => response.json())
+    	.then(data => {
+      		posts = data.data;
+    })});
+
 
 </script>
 <div class="notif">
@@ -73,14 +46,15 @@ import Nav from "./nav.svelte";
     </center>
     </div>
     
-{#each jasa as service}
+{#each posts as post}
     <div class="card">
       <div class="card-image">
-        <img src="{service.img}" alt="{service.nama}">
+        <img src="{post.imageurl}" alt="{post.title}">
       </div>
       <div class="card-content">
-        <h2 class="card-title">{service.nama}</h2>
-        <p class="card-description">{service.desc}</p>
+        <h2 class="card-title">{post.title}</h2>
+        <p class="card-description" style="margin-bottom: 10px;">{post.desc}</p>
+        <a href="/produk/{post.title}" class="bg-black text-white px-3 py-2 my-1 rounded">lebih lanjut</a>
       </div>
     </div>
 {/each}
@@ -132,13 +106,15 @@ import Nav from "./nav.svelte";
 
     .card-image {
       flex: 0 0 30%;
-      padding: 10px;
+      
+
+
     }
 
     .card-image img {
       width: 100%;
-      height: auto;
-      object-fit: cover; /* Keeps aspect ratio */
+      max-height: 250px;
+      object-fit: cover;
     }
 
     .card-content {

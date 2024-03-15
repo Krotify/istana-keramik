@@ -1,5 +1,7 @@
 <script>
     import Footer from "../../footer.svelte";
+
+
 import Nav from "../../nav.svelte";
 
 import { onMount } from 'svelte';
