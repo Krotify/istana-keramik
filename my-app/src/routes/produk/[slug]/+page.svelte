@@ -1,18 +1,41 @@
 <script>
-    import Footer from "../footer.svelte";
-import Nav from "../nav.svelte";
+    import Footer from "../../footer.svelte";
+import Nav from "../../nav.svelte";
+
+import { onMount } from 'svelte';
+	export let posts = [];
+    export let sub
+    export let image
+  
+	onMount(()=>{fetch('/catalogue.json')
+    	.then(response => response.json())
+    	.then(blog => {
+      		posts = blog.data;
+
+              for (const post of posts) {
+                    if (post.title === data.title) {
+                        sub = post.desc;
+                        image = post.imageurl;
+                        
+                    }
+                }
+    })});
+
+
+    export let data;
+
 
 </script>
 <Nav />
-<a href="" style="font-size: 15px;padding: 0px 20px"align="left"> 🔙 kembali ke list produk</a>
+<a href="../produk" style="font-size: 15px;padding: 0px 20px"align="left"> 🔙 kembali ke list produk</a>
 <div class="flex-container">
     <div class="flex-content1">
-        <img src="aurora.avif" alt="nama gambar">
+        <img src="{image}" alt="{image}">
     </div>
         
     <div class="flex-content2">
-        <h1>Title</h1>
-        <p style="word-wrap: break-word;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in convallis nisl, tempus molestie augue. Maecenas quis ornare mi. Duis risus tellus, fringilla in ultrices id, sagittis imperdiet sapien. Vestibulum luctus est lectus, nec accumsan mi gravida non. Quisque ullamcorper turpis ac viverra bibendum. Sed feugiat, purus sed scelerisque imperdiet, urna urna pellentesque augue, at mattis mauris nisl sit amet elit. Integer quis commodo urna. Nullam massa dui, feugiat a aliquet vitae, tempor sed diam.</p>
+        <h1>{data.title}</h1>
+        <p style="word-wrap: break-word;">{sub}</p>
         <a href="" style="background-color: black; border-radius:5px; color:#fff; font-size:15px; padding:10px 12px; margin:10px 0">Order via WhatsApp</a>
     </div>
 </div>
