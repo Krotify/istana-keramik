@@ -12,6 +12,11 @@ import { onMount } from 'svelte';
 
 </script>
 <Nav />
+<div class="content">
+<center>
+    <h1 class="text-2xl">Produk kami</h1>
+    
+</center>
 {#each posts as post}
     <div class="card">
       <div class="card-image">
@@ -20,41 +25,21 @@ import { onMount } from 'svelte';
       <div class="card-content">
         <h2 class="card-title">{post.title}</h2>
         <p class="card-description" style="margin-bottom: 10px;">{post.desc}</p>
-        <a href="/produk/{post.title}" class="bg-black text-white px-3 py-2 my-1 rounded">lebih lanjut</a>
+        <a href="/produk/{post.title}" class="bg-black text-white px-3 py-2 my-1 rounded">Lebih Lanjut</a>
       </div>
     </div>
 {/each}
-
+</div>
 <Footer />
 
 <style>
-    .hero {
-        text-align: center;
-        background-image: url('hero.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 150px;
-        padding-bottom: 150px;
-        background-position: center;
+    .content{
+        padding: 50px;
     }
-    .notif{
-        background-color: rgb(255, 89, 89);
-        padding: 5px;
-    }
-    .box {
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      margin: 20px auto;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
+    
     .card {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       width: 80%;
       margin: 20px auto;
       border: 1px solid #ddd;
@@ -65,13 +50,11 @@ import { onMount } from 'svelte';
     .card-image {
       flex: 0 0 30%;
       
-
-
     }
 
     .card-image img {
       width: 100%;
-      max-height: 250px;
+      max-height: 150px;
       object-fit: cover;
     }
 

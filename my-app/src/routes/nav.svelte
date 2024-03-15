@@ -1,7 +1,6 @@
 <ul>
     <li style="float:left"><b class="item">Istana Keramik</b></li>
     <li><a href="/produk">Produk</a></li>
-    <li><a href="/#layanan">Layanan</a></li>
     <li><a href="/">Beranda</a></li>
     
   </ul>

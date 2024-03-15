@@ -15,7 +15,7 @@ import { onMount } from 'svelte';
 
 </script>
 <div class="notif">
-    <p class = "font-semibold text-center">⚠️Hati-hati penipuan! Nomor WhatsApp cuma satu</p>
+    <p class = "font-semibold text-center">⚠️Hati-hati penipuan! Nomor WhatsApp cuma satu: 0818295921</p>
 </div>
 <Nav/>
 
