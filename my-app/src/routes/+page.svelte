@@ -38,12 +38,14 @@ import { onMount } from 'svelte';
     <p>Nomor WhatsApp   :   0818295921</p>
 </div>
 
-<div class = "box">
-  <div id="layanan">
   <center>
     <h2 class="text-4xl font-semibold mb-10">Layanan</h2>
     <p>Jasa dan Layanan pembangunan yang kami tawarkan:</p>
     </center>
+
+<div class = "box">
+  <div id="layanan">
+
     </div>
     
 {#each posts as post}
@@ -58,12 +60,14 @@ import { onMount } from 'svelte';
       </div>
     </div>
 {/each}
+
+</div>
 <center>
   <p>Jika anda mempunyai request lainnya dapat menghubungi kami</p>
   <br>
   <button class="bg-black text-white px-3 py-2 rounded">Request Pesanan</button>
 </center>
-</div>
+
 
 
 
@@ -85,35 +89,31 @@ import { onMount } from 'svelte';
     }
     .box {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       width: 90%;
-      padding-top: 40px;
-      padding-bottom: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
       margin: 20px auto;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
     }
     .card {
       display: flex;
       flex-direction: column;
-      width: 80%;
-      margin: 20px auto;
+      margin: 20px 10px;
       border: 1px solid #ddd;
-      border-radius: 5px;
+      border-radius: 10px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
     .card-image {
       flex: 0 0 30%;
-      
-
+      object-fit: cover;
 
     }
 
     .card-image img {
       width: 100%;
-      max-height: 250px;
+      max-width: 250px;
       object-fit: cover;
     }
 
