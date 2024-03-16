@@ -43,25 +43,25 @@ import { onMount } from 'svelte';
     <p>Jasa dan Layanan pembangunan yang kami tawarkan:</p>
     </center>
 
-<div class = "box">
-  <div id="layanan">
 
-    </div>
+    <div class="carousel">
+      {#if posts.length > 0}
+        {#each posts as post}
     
-{#each posts as post}
-    <div class="card">
-      <div class="card-image">
-        <img src="{post.imageurl}" alt="{post.title}">
-      </div>
-      <div class="card-content">
-        <h2 class="card-title">{post.title}</h2>
-        <p class="card-description" style="margin-bottom: 10px;">{post.desc}</p>
-        <a href="/produk/{post.title}" class="bg-black text-white px-3 py-2 my-1 rounded">lebih lanjut</a>
-      </div>
+        <div class="card">
+            <img src="{post.imageurl}" alt="{post.title} pic" style="width:100%">
+            <div class="container">
+                <h4><b>{post.title}</b></h4>
+                <a class="btn" href={`/produk/${post.title}`}>Read More</a>
+            </div>
+        </div>
+      {/each}
+        {:else}
+        <p>No blog posts available.</p>
+      {/if}
     </div>
-{/each}
 
-</div>
+
 <center>
   <p>Jika anda mempunyai request lainnya dapat menghubungi kami</p>
   <br>
@@ -87,58 +87,39 @@ import { onMount } from 'svelte';
         background-color: rgb(255, 89, 89);
         padding: 5px;
     }
-    .box {
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      margin: 20px auto;
 
+    .card-image{
+        width: 100px;
     }
     .card {
-      display: flex;
-      flex-direction: column;
-      margin: 20px 10px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px; /* 5px rounded corners */
+        width: 200px;
+        min-width: 250px;
+        margin: 20px;
+        
+    }
+    .container{
+        margin: 20px;
+    }
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        
+    }
+    .btn {
+        background-color: #0c0a18;
+        color: white;
+        padding: 5px 10px;
+        text-decoration: none;
     }
 
-    .card-image {
-      flex: 0 0 30%;
-      object-fit: cover;
-
-    }
-
-    .card-image img {
-      width: 100%;
-      max-width: 250px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      flex: 1;
-      padding: 10px;
-    }
-
-    .card-title {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-
-    .card-description {
-      font-size: 16px;
-    }
-
-    @media (max-width: 768px) {
-      .card {
-        flex-direction: column; /* Stack image and content on small screens */
-      }
-
-      .card-image {
-        flex: 1; /* Make image take full width on small screens */
-      }
-    }
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
 
 </style>
