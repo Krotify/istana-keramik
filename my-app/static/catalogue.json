@@ -2,12 +2,58 @@
     "data":[
         {
             "title":"CNC Metal Cutting",
-            "desc":"1",
+            "desc":"Metal, ACP, Acrylic, Wood, Plywood, MDF, Plywood, PVC, GRC, dll",
             "imageurl":"/aurora.avif"
         },
         {
-            "title":"2",
-            "desc":"2",
+            "title":"Gravir CNC",
+            "desc":"Acrylic, granite, kaca",
+            "imageurl":"/aurora.avif"
+    
+        },
+        {
+            "title":"Pemasangan filter air",
+            "desc":"jual pemasangan air, filternya, dan isinya ",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"Jasa pembuatan stepnosing",
+            "desc":"Metal, ACP, Acrylic, Wood, Plywood, MDF, Plywood, PVC, GRC, dll",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"stepnosing",
+            "desc":"bahanya yang tersedia granit,keramik tersedia",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"Cnc cutting",
+            "desc":"bahanya yang tersedia acp,pvcboard,plat besi,grc,acp,akrillic,tripleks,mdf,granit,kaca",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"pemasangan atap gupsum,plafon pvc,hollow",
+            "desc":"bahanya kita jual disini",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"Pemasangan water heater",
+            "desc":"bahanya kita jual disini dengan berbagai merk",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"Jasa pemasangan alumunium",
+            "desc":"bahanya kita jual disini",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"Jasa pemasangan baja ringan",
+            "desc":"canal,reng,baut,woodplank, dll",
+            "imageurl":"/aurora.avif"
+        },
+        {
+            "title":"Jasa konstruksi bangunan",
+            "desc":"bahanya kita jual disini",
             "imageurl":"/aurora.avif"
         }
     ]
