@@ -34,8 +34,12 @@
 
 <center style="margin-top: 60px;"><h1 class="text-4xl font-semibold mb-10">Gallery</h1></center>
 <div class="flex-container">
-  <div class="flex-item-left"><img src="pexels-eberhard-grossgasteiger-844297.jpg"></div>
-  <div class="flex-item-right"><img src="aurora.avif"></div>
+  <div class="flex-item-left"><img src="gambar1.webp"></div>
+  <div class="flex-item-right"><img src="gambar2.webp"></div>
+  <div class="flex-item-left"><img src="gambar3.webp"></div>
+  <div class="flex-item-right"><img src="gambar4.webp"></div>
+  <div class="flex-item-left"><img src="gambar5.webp"></div>
+  <div class="flex-item-right"><img src="gambar6.webp"></div>
 </div>
 
 
