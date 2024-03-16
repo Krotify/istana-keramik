@@ -1,14 +1,14 @@
 <footer>
     <div class="footercontainer">
         <div class="socialicons">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/istanakeramik_pwr?igsh=MTV3NG00cWhiOWRycg=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/62818295921?%5Bcutomer%20website%5D%20hai%20istana%20keramik%20saya%20tertarik%20dengan%20produk%20"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <div class="footerNav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Catalogue</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Contact Us</a></li>
+                <li><a href="/produk">Catalogue</a></li>
             </ul>
         </div>
         <div class="footerBottom">

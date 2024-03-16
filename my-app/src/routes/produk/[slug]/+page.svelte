@@ -38,7 +38,7 @@ import { onMount } from 'svelte';
     <div class="flex-content2">
         <h1>{data.title}</h1>
         <p style="word-wrap: break-word;">{sub}</p>
-        <a href="" style="background-color: black; border-radius:5px; color:#fff; font-size:15px; padding:10px 12px; margin:10px 0">Order via WhatsApp</a>
+        <a href="https://wa.me/62818295921?%5Bcutomer%20website%5D%20hai%20istana%20keramik%20saya%20tertarik%20dengan%20produk%20" style="background-color: black; border-radius:5px; color:#fff; font-size:15px; padding:10px 12px; margin:10px 0">Order via WhatsApp</a>
     </div>
 </div>
 

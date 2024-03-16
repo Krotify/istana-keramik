@@ -25,7 +25,7 @@ import { onMount } from 'svelte';
     <b class="text-lg">Paling Lengkap dan Paling terpercaya</b>
     <p>Toko dan jasa bangunan paling lengkap dan terbesar di Puworejo</p>
     <br>
-    <button class="bg-black text-white px-3 py-2 rounded">Hubungi Kami</button>
+    <a href="https://wa.me/62818295921?%5Bcutomer%20website%5D%20hai%20istana%20keramik%20saya%20tertarik%20dengan%20produk%20" class="bg-black text-white px-3 py-2 rounded">Hubungi Kami</a>
     
 </div>
 
@@ -65,7 +65,7 @@ import { onMount } from 'svelte';
 <center>
   <p>Jika anda mempunyai request lainnya dapat menghubungi kami</p>
   <br>
-  <button class="bg-black text-white px-3 py-2 rounded">Request Pesanan</button>
+  <a href="https://wa.me/62818295921?%5Bcutomer%20website%5D%20hai%20istana%20keramik%20saya%20tertarik%20dengan%20produk%20" class="bg-black text-white px-3 py-2 rounded">Request Pesanan</a>
 </center>
 
 
